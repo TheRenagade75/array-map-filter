@@ -23,7 +23,15 @@ Sortie attendue:
 
  */
 
+
 function keepStarks(names) {
+  sortie = names.filter(function(n) {
+      let word = n.split(' ');
+      if(word[1] == 'Stark') {
+        return word;
+      }
+  });
+  return sortie;
 }
 
 // Ne pas modifier l'export
