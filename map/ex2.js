@@ -42,7 +42,16 @@ En sortie: [
 
  */
 
+
 function getFoodCategories(foods) {
+  let sortie = foods.map(function(n) {
+    if (n.isVegetarian == true) {
+      return n.food + " is suitable for vegetarians";
+    } else {
+      return n.food + " is not suitable for vegetarians";
+    }
+});
+return sortie;
 }
 
 
